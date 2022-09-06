@@ -7,8 +7,7 @@ Machine learning (ML) models are used in clinical metabolomics studies most nota
 
 ## Code base notes> 
 
-- Older notebooks can be safely ignored for the manuscript, as those are associated to the first version of the manuscript, as it can be found in my PhD thesis. 
 - The anaconda environment for this work: pls-da-shap.yml
 - The important models are saved in the folder saved_models.
 - PyChemometrics is the folder for the library used in PLS-DA computation for this work. For some reason, some PLS-DA code wouldn't run if you don't have them in the same directory from which you run the code. 
-- Data folder contains the raw data used in this study, as prepared by Mendez et al in machine learning paper. 
+- Data folder contains the raw data used in this study, as prepared by Mendez et al in his paper.
