@@ -1,13 +1,58 @@
 # shap-metabolomics
+ 
+Code base for the study: **"Interpretable machine learning with tree-based shapley additive explanations: application to metabolomics datasets for binary classification."**
 
-Code base for the paper: Interpretable machine learning with tree-based shapley additive explanations: application to metabolomics datasets for binary classification
+[Link to Preprint](https://www.biorxiv.org/content/10.1101/2022.09.19.508550v1)
 
-## Abstract
-Machine learning (ML) models are used in clinical metabolomics studies most notably for biomarker discoveries, to identify metabolites that discriminate between a case and control group. To improve understanding of the underlying biomedical problem and to bolster confidence in these discoveries, model interpretability is germane. In metabolomics, partial least square discriminant analysis (PLS-DA) and its variants are widely used, partly due to the model’s interpretability with the Variable Influence in Projection (VIP) scores, a global interpretable method. Herein, Tree-based Shapley Additive explanations (SHAP), an interpretable ML method grounded in game theory, was used to explain ML models with local explanations properties. In this study ML experiments (binary classification) was conducted for three published metabolomics datasets using PLS-DA, random forests, gradient boosting, and extreme gradient boosting (XGBoost). Using one of the datasets, PLS-DA model was explained using VIP scores, while a tree-based model was interpreted using Tree SHAP. The results show that SHAP has a more explanation depth than PLS-DA’s VIP, making it a powerful method for rationalizing machine learning predictions from metabolomics studies.  
+## Requirements
+
+- __[Anaconda](https://www.anaconda.com/)__
+- __[Python >= 3.8.8](https://www.python.org/downloads/)__
+- __[Jupyter](https://jupyter.org/install)__
+
+
+### 1. git repository
+
+Clone local copy of git repository
+
+git clone https://github.com/obifarin/shap-iml-metabolomics
+
+(or use a git GUI client of your choice)
+
+### 2. Environment setup and access jupyter notebooks
+Setup python environment (`pls-da-shap.yml`) in the terminal. 
+
+(or use anaconda GUI.)
+
+
+### 3. Notebook contents
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>01_Sex_MTBLS404.ipynb</td>
+    <td>Discriminating biological sex via urine metabolomics.</td>
+  </tr>
+  <tr>
+    <td>02_HighFatDiet_MTBLS547.ipynb</td>
+    <td>The impact of a high-fat diet on bile acids in the cecum.</td>
+  </tr>
+   <tr>
+    <td>03_Adenocarcinoma_ST000369.ipynb</td>
+    <td>Detecting Adenocarcinoma via serum metabolomics.</td>
+  </tr>
+    <tr>
+    <td>04-pubmed-metabolomics.ipynb</td>
+    <td>Keyword occurrences by year for partial least squares regression, random forest, and gradient boosting in metabolomics publications on PubMed.</td>
+  </tr>
+</table>
 
 ## Code base notes> 
 
 - The anaconda environment for this work: pls-da-shap.yml
 - The important models are saved in the folder saved_models.
 - PyChemometrics is the folder for the library used in PLS-DA computation for this work. For some reason, some PLS-DA code wouldn't run if you don't have them in the same directory from which you run the code. 
-- Data folder contains the raw data used in this study, as prepared by Mendez et al in his paper.
+- Data folder contains the raw data used in this study, as prepared by [Mendez et al](https://link.springer.com/article/10.1007/s11306-019-1612-4) in his paper.
