@@ -54,5 +54,5 @@ Setup python environment (`pls-da-shap.yml`) in the terminal.
 
 - The anaconda environment for this work: pls-da-shap.yml
 - The important models are saved in the folder saved_models.
-- PyChemometrics is the folder for the library used in PLS-DA computation for this work. For some reason, some PLS-DA code wouldn't run if you don't have them in the same directory from which you run the code. 
+- PyChemometrics is the folder for the library used in PLS-DA computation for this work. Some PLS-DA code wouldn't run if you don't have them in the same directory from which you run the code. 
 - Data folder contains the raw data used in this study, as prepared by [Mendez et al](https://link.springer.com/article/10.1007/s11306-019-1612-4) in his paper.
